@@ -183,3 +183,19 @@ export const courseFileInputs = [
   },
   
 ];
+
+export const generalInputs = [
+  {
+    id: "fileName",
+    label: "File Name",
+    type: "text",
+    placeholder: "Handbook",
+  },
+  {
+    id: "fileType",
+    label: "Type",
+    type: "text",
+    placeholder: "pdf",
+  },
+  
+];

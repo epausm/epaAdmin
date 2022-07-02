@@ -72,7 +72,7 @@ const NewInfo = ({ inputs, title }) => {
   const handleAdd = async (e) => { //add products
     e.preventDefault();
     try {
-        await addDoc(collection(db, "info"), {
+        await addDoc(collection(db, "general"), {
           ...data,
           timeStamp: serverTimestamp(),
         });

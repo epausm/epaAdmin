@@ -33,7 +33,7 @@ const InfoData = () => {
 
     // LISTEN (REALTIME)
     const unsub = onSnapshot(
-      collection(db, "info"),
+      collection(db, "general"),
       (snapShot) => {
         let list = [];
         snapShot.docs.forEach((doc) => {
@@ -53,7 +53,7 @@ const InfoData = () => {
 
   const handleDelete = async (id) => {
     try {
-      await deleteDoc(doc(db, "info", id));
+      await deleteDoc(doc(db, "general", id));
       setData(data.filter((item) => item.id !== id));
     } catch (err) {
       console.log(err);
@@ -86,7 +86,7 @@ const InfoData = () => {
     <div className="datatable">
       <div className="datatableTitle">
         Add New Information
-        <Link to="/information/new" className="link">
+        <Link to="/general/new" className="link">
           Add New
         </Link>
       </div>
