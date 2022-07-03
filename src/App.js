@@ -6,7 +6,7 @@ import CourseList from "./pages/list/CourseList";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { userInputs, advisorInputs, generalInputs, courseFileInputs} from "./formSource";
+import { userInputs, advisorFileInputs, generalInputs, courseFileInputs} from "./formSource";
 import "./style/dark.scss";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
@@ -111,7 +111,7 @@ function App() {
                 path="new"
                 element={
                   <RequireAuth>
-                    <NewAdvisor inputs={advisorInputs} title="Add New Advisor" />
+                    <NewAdvisor inputs={advisorFileInputs} title="Add New Advisor" />
                   </RequireAuth>
                 }
               />

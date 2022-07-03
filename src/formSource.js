@@ -135,40 +135,23 @@ export const advisorInputs = [
   },
 ];
 
-export const infoInputs = [
+export const courseFileInputs = [
   {
-    id: "info",
-    label: "Information",
+    id: "fileName",
+    label: "File Name",
     type: "text",
-    placeholder: "Type of Major",
+    placeholder: "Course Register Guidelines",
   },
   {
-    id: "stud1",
-    label: "Student Name 1",
+    id: "fileType",
+    label: "Type",
     type: "text",
-    placeholder: "Nur Arina",
+    placeholder: "pdf",
   },
-  {
-    id: "stud2",
-    label: "Student Name 2",
-    type: "text",
-    placeholder: "Nur Fatihah",
-  },
-  {
-    id: "room",
-    label: "Room",
-    type: "text",
-    placeholder: "Room 1, Level 1",
-  },
-  {
-    id: "email",
-    label: "Email",
-    type: "mail",
-    placeholder: "dr@usm.my",
-  },
+  
 ];
 
-export const courseFileInputs = [
+export const advisorFileInputs = [
   {
     id: "fileName",
     label: "File Name",
