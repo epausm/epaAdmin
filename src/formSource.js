@@ -156,7 +156,7 @@ export const advisorFileInputs = [
     id: "fileName",
     label: "File Name",
     type: "text",
-    placeholder: "Course Register Guidelines",
+    placeholder: "Advisors List",
   },
   {
     id: "fileType",
