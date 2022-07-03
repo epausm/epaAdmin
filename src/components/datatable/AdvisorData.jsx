@@ -1,6 +1,6 @@
 import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import {  userRows, advisorColumns} from "../../advisortablesource";
+import {  userRows, advisorFileColumns} from "../../advisortablesource";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import {
@@ -93,7 +93,7 @@ const AdvisorData = () => {
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={advisorColumns.concat(actionColumn)}
+        columns={advisorFileColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
